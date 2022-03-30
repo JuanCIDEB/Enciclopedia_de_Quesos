@@ -19,35 +19,51 @@
 
     </sript>
     <body class="d-flex min-vh-100 flex-column mb-lg-1" >
-      <nav id="nav" class="navbar-expand-lg sticky-top" >
-        <!--Header logo y itulo-->  
-        <ul class="nav bg-black"> 
-          <header id="header">
-            <a class="navbar-brand m-1 p-2 m-1 h1 sticky-top text-white " href="index.html">
-              <img  src="logo.png" class="d-inline-block align-top" width="10%" onclick="imagechange()"></img>
-              Quesos
-            </a>
+      <nav id="nav" class="navbar-expand-lg sticky-top " >
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+          <!--Header logo y itulo-->  
+          <ul class="nav bg-black pt-2 navbar-right justify-content-start"> 
+            <header id="header">
+              <a class="navbar-brand p-2 m-1 h1 sticky-top text-white  " href="index.html">
+                <img  src="logo.png" class="d-inline-block align-top" width="10%" ondblclick="imagechange()"></img>
+                Quesos
+              </a>
+              
+            </header>
             
-          </header>
-          
-          <li class="nav-item">
-            <a class="nav-link active border-bottom text-warning .text-white" href="https://getbootstrap.com/docs/4.6/components/navs/" target="_blank">BootStrap Doc</a>
-          </li>
-          <li class="nav-item"><a class="nav-link border-bottom text-warning .text-white .bg-black"  href="#footer" >About</a></li>
-          <li class="nav-item dropdown">
-            <!--Dropdown que no funciona por alguna razon :( -->
-            <a id="quesoDropdown" class="nav-link border-bottom text-warning" href="#"  role="button" data-toggle="dropdown" aria-expanded="false" >Quesos</a>
-            <div class="dropdown-menu" aria-labelledby="quesoDropdown">
-                <a class=" dropdown-item border-bottom text-warning"  href="#Mozzarella" >Queso Mozzarella</a>
-                <a class=" dropdown-item border-bottom text-warning" href="#Panela">Queso Panela</a>
-                <a class=" dropdown-item border-bottom text-warning" href="#Crema">Queso Crema</a>
-            </div>
-          </li>
-          <li class="nav-item"><a class="nav-link border-bottom text-warning .text-white .bg-black"  href="simulador.html" >Simulador</a></li>
-          <li class="nav-item"><a class="nav-link border-bottom text-warning .text-white .bg-black"  href="merch.html" >Mercado</a></li>
-          <li class="nav-item"><a class="nav-link border-bottom text-warning .text-white .bg-black"  href="#footer" >Contacto</a></li>
-        </ul>
+            <li class="nav-item ">
+              <a class="nav-link active border-bottom text-warning .text-white" href="https://getbootstrap.com/docs/4.6/components/navs/" target="_blank">BootStrap Doc</a>
+            </li>
+            <li class="nav-item"><a class="nav-link border-bottom text-warning .text-white .bg-black"  href="index.html#cabra" >About</a></li>
+            <li class="nav-item dropdown">
+              <!--Dropdown que no funciona por alguna razon :( -->
+              <a id="quesoDropdown" class="nav-link border-bottom text-warning" href="quesoslista.html"  role="button" data-toggle="dropdown" aria-expanded="false" >Quesos</a>
+              <div class="dropdown-menu" aria-labelledby="quesoDropdown">
+                  <a class=" dropdown-item border-bottom text-warning"  href="quesoslista.html#Mozzarella" >Queso Mozzarella</a>
+                  <a class=" dropdown-item border-bottom text-warning" href="quesoslista.html#Panela">Queso Panela</a>
+                  <a class=" dropdown-item border-bottom text-warning" href="quesoslista.html#Crema">Queso Crema</a>
+              </div>
+            </li>
+            <li class="nav-item align"><a class="nav-link border-bottom text-warning .text-white .bg-black"  href="simulador.html" >Simulador</a></li>
+            <li class="nav-item"><a class="nav-link border-bottom text-warning .text-white .bg-black"  href="merch.html" >Productos</a></li>
+            <li class="nav-item"><a class="nav-link border-bottom text-warning .text-white .bg-black"  href="index.html#footer" >Contacto</a></li>
+            <li class="nav-item">
+              <form class="navbar-form mx-flex">
+                <div class="input-group mb-1 input-group-sm align m-1 small form-group">
+                  <input id ="searchbar" type="text" class="form-control" placeholder="Buscar..." aria-label="Searchbar" aria-describedby="button-addon2">
+                  <div class="input-group-append small">
+                    <button class="btn btn-outline-warning" type="submit" id="button-addon2" onclick="input()"><img width="7-1%" height="auto" src="https://e6.pngbyte.com/pngpicture/1514/png-search-icon-png-search-icon-svg-white_thumbnail.png"></img></button>
+                  </div>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+        
 
+          </span>
+        </button>  
+       
       </nav>
       <p></p>
     <div id="bottons" class="container align-middle bg-warning rounded-3 text-center ">
