@@ -45,19 +45,10 @@
                   <a class=" dropdown-item border-bottom text-warning" href="quesoslista.html#Crema">Queso Crema</a>
               </div>
             </li>
-            <li class="nav-item align"><a class="nav-link border-bottom text-warning .text-white .bg-black"  href="simulador.html" >Simulador</a></li>
-            <li class="nav-item"><a class="nav-link border-bottom text-warning .text-white .bg-black"  href="merch.html" >Productos</a></li>
-            <li class="nav-item"><a class="nav-link border-bottom text-warning .text-white .bg-black"  href="#footer" >Contacto</a></li>
-            <li class="nav-item">
-              <form class="navbar-form mx-flex">
-                <div class="input-group mb-1 input-group-sm align m-1 small form-group">
-                  <input id ="searchbar" type="text" class="form-control" placeholder="Buscar..." aria-label="Searchbar" aria-describedby="button-addon2">
-                  <div class="input-group-append small">
-                    <button class="btn btn-outline-warning" type="submit" id="button-addon2" onclick="input()"><img width="7-1%" height="auto" src="https://e6.pngbyte.com/pngpicture/1514/png-search-icon-png-search-icon-svg-white_thumbnail.png"></img></button>
-                  </div>
-                </div>
-              </form>
-            </li>
+          
+            <li class="nav-item"><a class="nav-link border-bottom text-warning .text-white .bg-black "  href="" alt="No disponible">Productos</a></li>
+            <li class="nav-item"><a class="nav-link border-bottom text-warning .text-white .bg-black"  href="index.html#footer" >Contacto</a></li>
+            <li class="nav-item align-content-end"><a class="nav-link border-bottom text-warning .text-white .bg-black"  href="simulador.html" >Buscador </a></li>
           </ul>
         </div>
         
@@ -76,21 +67,22 @@
           <div class="carousel-item active">
             <img src="Queso-mozzarella.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block bg-white rounded-3">
-              <a href="quesoslista.html" class="text-muted text-decoration-none"><h5 >Queso Mozzarella</h5></a>
+              
+              <a href="quesoslista.html#Mozzarella" class="text-muted text-decoration-none"><h5 >Queso Mozzarella</h5></a>
               <p>El queso mozzarella tiene un aspecto fresco, suave y brillante, de apariencia húmeda.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="Queso-panela.jpg" class="d-block w-100" alt="..."  >
             <div class="carousel-caption d-none d-md-block bg-white rounded-3">
-              <a href="quesoslista.html" class="text-muted text-decoration-none"><h5>Queso Panela</h5></a>
+              <a href="quesoslista.html#Panela" class="text-muted text-decoration-none"><h5>Queso Panela</h5></a>
               <p>El queso panela es un queso fresco, suave y blanco de leche pasteurizada de vaca, no requiere maduración.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="Queso-crema.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block bg-white rounded-3">
-              <a href="quesoslista.html" class="text-muted text-decoration-none"><h5 >Queso Crema</h5></a>
+              <a href="quesoslista.html#Crema" class="text-muted text-decoration-none"><h5 >Queso Crema</h5></a>
               <p>El queso crema es un tipo de queso untable que se obtiene al cuajar mediante fermentos lácticos una mezcla de leche.</p>
             </div>
           </div>
@@ -105,35 +97,68 @@
         </a>
       </div>
       <p><br></p>
+
       <div class="container">
        
-          <div class="container-fluid bg-warning rounded-3">
+          <div id="cabra" class="container-fluid bg-warning rounded-top" >
               
               <aside>
 
-                  <div id="cabra">
-                      <h1 class=" h1 bg-warning text-bold">Queso</h1>
+                  <div >
+                      <h1 class=" h1 bg-warning text-bold text-center">Queso</h1>
                       
-                      <div ><img id="imgabout" src="Qcambia1.jpg"class="img-fluid rounded float-start m-2" width="200px" height="auto"  onclick="imagechange()"></div>
-                      <h3 id="about" class="text-bold"> About <br></h3>
-                      <div id="txtregular"  ><p>El queso es un alimento sólido que se obtiene por maduración de la cuajada de la leche animal o vegetal una vez eliminado el suero; sus diferentes variedades dependen del origen de la leche empleada, de los métodos de elaboración seguidos y del grado de madurez alcanzada.<br>-Wikipedia</p></div>
-                                
+                      <div ><img id="imgabout" src="Qcambia1.jpg"class="img-fluid rounded float-start m-2" width="30%" height="auto"  onclick="imagechange()"></div>
+                      <h3 id="about" class="text-bold fst-italic"> About <br></h3>
+                      <div id="txtregular"  class="fst-italic"><p>El queso es un alimento sólido que se obtiene por maduración de la cuajada de la leche animal o vegetal una vez eliminado el suero; sus diferentes variedades dependen del origen de la leche empleada, de los métodos de elaboración seguidos y del grado de madurez alcanzada.<br>-Wikipedia</p></div>
+                      <div class="">
+                        <!-- Todo lo de Java-->
+                        <button class="btn btn-dark align-self-center m-3 align-self-start visually-hidden"onclick="mostrarAlerta()">Queso^3</button>
+                        <button class="btn btn-dark align-self-center m-3 align-self-end visually-hidden"onclick="clickname()">Enlistar quesos</button>
+                        <button class="btn btn-dark align-self-center m-3 align-content-center"onclick="imagechange()">Dale click para <strong>queso</strong></button>
+                      </div>
+                               
                   </div>
-                  
+ 
               </aside>
               <br>
-              <!-- Todo lo de Java-->
-              <button class="btn btn-dark align-self-center m-3 align-self-start"onclick="mostrarAlerta()">Queso^3</button>
-              <button class="btn btn-dark align-self-center m-3 align-self-end"onclick="clickname()">Enlistar quesos</button>
-              <button class="btn btn-dark align-self-center m-3 align-self-end"onclick="imagechange()">Cambiar de imagen</button>
+
 
           </div>
-          <p><br></p>
 
 
-          
+          <p class="bg-black text-white display-6 text-center m-0"><strong class="text-warning">Qu</strong>i<strong class="text-warning">e</strong>ne<strong class="text-warning">s</strong> S<strong class="text-warning">o</strong>mo<strong class="text-warning">s</strong></p>
+          <div class="container">   
       </div>
- 
+      <div class="container-fluid bg-warning rounded-top" >
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 text-center" >
+              <img src="enciclopediaquesos.jpg" width="auto" class="img-fluid rounde m-2">
+          </div>
+      
+            <div class="col-xl-6 col-lg-6  ">
+              <br><p class="text-justify ">La <strong>enciclopedia de quesos </strong> es un negocio que busca informar y vender quesos, funcionado como un mercado online al igual que ser una fuente de información sobre los quesos que consumimos. </p>
+              <p>La<STRONG> E.Q.</STRONG> ofrece segmentos gratuitos de la información de nuestra famosa enciclopedia, que pueden ver aquí. </p>
+              <p class="text-center"><strong>Produtos Más Vendidos</strong></p>
+              <div class="row">
+                <div class="col w-fit col-md-border">
+                 <a href=""> 
+                    <button class="btn bg-warning rounded"><img src="enciclopediamercado.jpg" width="80%" height="35%" ></button>
+                  </a>
+                </div>
+                  
+                <div class="col w-fit col-md-border">
+                  <a href="">
+                  <button class="btn bg-warning rounded"><img src="quesoartesanal.png" width="80%" height="35%"></button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <iframe class="m-1"src="https://www.google.com/maps/embed?pb=!4v1648737772406!6m8!1m7!1srZYX3B_95oYygDKCfDjtyQ!2m2!1d20.52353250540335!2d-99.89094780329067!3f226.56003514726467!4f3.5035539607704322!5f0.7820865974627469" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+<br>
       <footer id="footer" class=" bg-dark text-white bd-footer py-5 mt-auto p-md-3  ">
         <p class="fw-bold text-center small">La Enciclopedia de Quesos</p>
         <div class="row w-3 ">
@@ -144,31 +169,10 @@
               Contacto:
             </div>
             <p class="small">
-              Juan Héctor Vargas Casas
+              Juan Héctor Vargas Casas  
             </p>
-            <form class="px-4 py-3 needs-validation" novalidate>
-              <div class="form-group">
-                <label for="idnombre">Nombre</label>
-                <input type="text" class="form-control" id="idnombre" placeholder="Nombre" required>
-                <div class="invalid-feedback">
-                  Por favor escriba su nombre.</div>
-              </div>
-              <div class="form-group">
-                <label for="idemail">Email</label>
-                <input type="email" class="form-control" id="idemail" placeholder="email@example.com" required>
-              </div>
-              <div class="form-group">
-                <label for="idcomentario">Comentario</label>
-                <textarea type="text" class="form-control" id="idcomentario" rows="3" placeholder="Comentario" required></textarea> 
-              </div> 
-              <div class="form-group">
-                <div class="form-check">
-                </div>
-              </div>
-              <button type="button" class="btn btn-warning" onclick="comprobar()">Enviar</button>
-            </form>
+
           </div>
-          <button type="button" class="btn  btn-warning" onclick="comprobar()" >bruh </button>
           <div class="col w-fit p-4 ">
             
               <div class="fw-bold">Direccion: </div>
@@ -177,7 +181,26 @@
               <div class="fw-bold">Telefono: </div>(414) 273 6485<br><br>
             
           </div>
+          <form class="px-4 py-3 needs-validation"  action="index.html">
+            <div class="form-group">
+              <label for="idnombre">Nombre</label>
+              <input type="text" class="form-control" id="idnombre" placeholder="Nombre" required>
 
+            <div class="form-group">
+              <label for="idemail">Email</label> 
+              <input type="email" class="form-control" id="idemail" placeholder="email@ejemplo.com" required>
+            </div>
+            <div class="form-group">
+              <label for="idcomentario">Comentario</label>
+              <textarea type="text" class="form-control" id="idcomentario" rows="3" placeholder="Comentario" required></textarea> 
+            </div> 
+            <div class="form-group">
+              <div class="form-check">
+              </div>
+            </div>
+            <input type="submit" class="btn btn-warning" value="Enviar"></button>
+
+          </form>
 
         </div>
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
